@@ -1,0 +1,21 @@
+{
+  "app.title": "Organisation Directory",
+  "list.col.name": "Name",
+  "list.col.status": "Status",
+  "list.col.members": "Members",
+  "list.col.owner": "Owner",
+  "list.col.created": "Created",
+  "list.loadedProgress": "Loaded {loaded} of {total}",
+  "state.loading": "Loading organisations…",
+  "state.empty": "No organisations match your search.",
+  "state.error": "We couldn't load the organisations.",
+  "state.rateLimited": "Too many requests. Retrying shortly…",
+  "state.retry": "Try again",
+  "org.unnamed": "Unnamed organisation",
+  "common.dash": "—",
+  "status.active": "Active",
+  "status.inactive": "Inactive",
+  "status.suspended": "Suspended",
+  "status.pending": "Pending",
+  "status.unknown": "Unknown"
+}
