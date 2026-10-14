@@ -78,7 +78,12 @@
           <td class="name" dir="auto" [attr.title]="org.name">
             {{ org.name ?? ('org.unnamed' | t) }}
           </td>
-          <td>{{ statusLabel(org.status) | t }}</td>
+                    <td>
+            <span class="status">
+              <span class="dot" [attr.data-status]="org.status" aria-hidden="true"></span>
+              {{ statusLabel(org.status) | t }}
+            </span>
+          </td>
           <td>{{ org.memberCount ?? ('common.dash' | t) }}</td>
           <td>{{ org.ownerEmail ?? ('common.dash' | t) }}</td>
           <td>{{ (org.createdAt | date: 'mediumDate') ?? ('common.dash' | t) }}</td>

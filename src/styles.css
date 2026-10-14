@@ -32,6 +32,8 @@
   --border-width: 1px;
   --focus-ring-width: 2px;
   --name-max-width: 28rem;
+    --dot-size: 0.75rem;
+  --dot-border-width: 2px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

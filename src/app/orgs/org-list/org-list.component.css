@@ -85,3 +85,48 @@ select {
 .state-success {
   color: var(--color-status-active);
 }
+/* Status = a small shape + a visible text label. Colour is never the only signal. */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  flex-shrink: 0;
+  inline-size: var(--dot-size);
+  block-size: var(--dot-size);
+  border: var(--dot-border-width) solid var(--dot-color);
+  border-radius: 50%;
+  background: var(--dot-color);
+}
+
+/* active: filled circle */
+.dot[data-status='active'] {
+  --dot-color: var(--color-status-active);
+}
+
+/* inactive: hollow circle */
+.dot[data-status='inactive'] {
+  --dot-color: var(--color-status-inactive);
+  background: transparent;
+}
+
+/* suspended: filled square */
+.dot[data-status='suspended'] {
+  --dot-color: var(--color-status-suspended);
+  border-radius: 0;
+}
+
+/* pending: half-filled circle */
+.dot[data-status='pending'] {
+  --dot-color: var(--color-status-pending);
+  background: linear-gradient(90deg, var(--dot-color) 50%, transparent 50%);
+}
+
+/* unknown: hollow square */
+.dot[data-status='unknown'] {
+  --dot-color: var(--color-status-unknown);
+  border-radius: 0;
+  background: transparent;
+}
