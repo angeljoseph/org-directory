@@ -24,17 +24,27 @@
   }
 
   <table>
-    <thead>
+        <thead>
       <tr>
-        <th>{{ 'list.col.name' | t }}</th>
+        <th [attr.aria-sort]="ariaSort('name')">
+          <button type="button" class="sort-btn" (click)="sortBy('name')">
+            {{ 'list.col.name' | t }}
+            <span aria-hidden="true">{{ sortArrow('name') | t }}</span>
+          </button>
+        </th>
         <th>{{ 'list.col.status' | t }}</th>
         <th>{{ 'list.col.members' | t }}</th>
         <th>{{ 'list.col.owner' | t }}</th>
-        <th>{{ 'list.col.created' | t }}</th>
+        <th [attr.aria-sort]="ariaSort('createdAt')">
+          <button type="button" class="sort-btn" (click)="sortBy('createdAt')">
+            {{ 'list.col.created' | t }}
+            <span aria-hidden="true">{{ sortArrow('createdAt') | t }}</span>
+          </button>
+        </th>
       </tr>
     </thead>
     <tbody>
-      @for (org of orgs(); track org.key) {
+      @for (org of sortedOrgs(); track org.key) {
         <tr>
           <td class="name" dir="auto" [attr.title]="org.name">
             {{ org.name ?? ('org.unnamed' | t) }}
