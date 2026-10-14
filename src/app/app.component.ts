@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslatePipe } from './core/translate.pipe';
 import { OrgApiService } from './core/org-api.service';
-import { mapPage } from './orgs/org.mapper';
+import { mapOrganisation } from './orgs/org.mapper';
 
 @Component({
   selector: 'app-root',
@@ -12,16 +12,25 @@ import { mapPage } from './orgs/org.mapper';
 })
 export class AppComponent {
   title = 'org-directory';
-  constructor() {
-    const api = inject(OrgApiService);
+//   constructor() {
+//     const api = inject(OrgApiService);
 
-    for (let p = 1; p <= 7; p++) {
-      api.getPage(p).subscribe({
-        next: (r) => console.log('page', p, r.items.length, 'of', r.total),
-        error: (e) => console.log('page', p, 'failed:', e.kind),
-      });
-    }
-    api.getPage(1).subscribe((r) => console.table(mapPage(r.items, 1)));
+//     for (let p = 1; p <= 7; p++) {
+//       api.getPage(p).subscribe({
+//         next: (r) => console.log('page', p, r.items.length, 'of', r.total),
+//         error: (e) => console.log('page', p, 'failed:', e.kind),
+//       });
+//     }
+//     api.getPage(1).subscribe((r) => console.table(mapPage(r.items, 1)));
     
+//   }
+// }
+private readonly api = inject(OrgApiService);
+
+  constructor() {
+    this.api.getPage(1).subscribe({
+      next: (r) => console.table(r.items.map((raw, i) => mapOrganisation(raw, `1:${i}`))),
+      error: (e) => console.log('failed, refresh the page:', e.kind),
+    });
   }
 }
