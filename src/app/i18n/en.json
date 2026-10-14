@@ -17,5 +17,11 @@
   "status.inactive": "Inactive",
   "status.suspended": "Suspended",
   "status.pending": "Pending",
-  "status.unknown": "Unknown"
+  "status.unknown": "Unknown",
+    "sort.none": "↕",
+    "sort.asc": "▲",
+  "sort.desc": "▼",
+    "filter.search": "Search by name",
+  "filter.status": "Status",
+  "filter.allStatuses": "All statuses"
 }

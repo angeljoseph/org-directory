@@ -8,6 +8,22 @@
     <button type="button" (click)="loadAll()">{{ 'state.retry' | t }}</button>
   </div>
 } @else {
+  <div class="filters">
+    <div class="field">
+      <label for="search">{{ 'filter.search' | t }}</label>
+      <input id="search" type="search" [value]="query()" (input)="onSearch($event)" />
+    </div>
+    <div class="field">
+      <label for="status">{{ 'filter.status' | t }}</label>
+      <select id="status" (change)="onStatus($event)">
+        <option value="" [selected]="statusFilter() === ''">{{ 'filter.allStatuses' | t }}</option>
+        @for (s of statusOptions; track s) {
+          <option [value]="s" [selected]="statusFilter() === s">{{ statusLabel(s) | t }}</option>
+        }
+      </select>
+    </div>
+  </div>
+
   <p class="progress" aria-live="polite">
     {{ 'list.loadedProgress' | t: { loaded: orgs().length, total: total() } }}
   </p>
@@ -24,7 +40,7 @@
   }
 
   <table>
-        <thead>
+    <thead>
       <tr>
         <th [attr.aria-sort]="ariaSort('name')">
           <button type="button" class="sort-btn" (click)="sortBy('name')">
@@ -57,4 +73,8 @@
       }
     </tbody>
   </table>
+
+  @if (!loading() && !error() && sortedOrgs().length === 0) {
+    <p class="state state-empty" role="status">{{ 'state.empty' | t }}</p>
+  }
 }

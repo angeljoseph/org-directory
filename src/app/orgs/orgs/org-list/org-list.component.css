@@ -49,3 +49,32 @@ th {
   border: none;
   cursor: pointer;
 }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-block-end: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+}
+
+input,
+select {
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.state-empty {
+  margin-block-start: var(--space-4);
+  text-align: center;
+  background: transparent;
+  border: var(--border-width) dashed var(--color-border);
+  color: var(--color-text-muted);
+}

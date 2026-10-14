@@ -1,6 +1,8 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
-import { firstValueFrom } from 'rxjs';
+import { Subject, debounceTime, distinctUntilChanged, firstValueFrom } from 'rxjs';
 import { ApiError, OrgApiService, PAGE_SIZE, RawPage } from '../../../core/org-api.service';
 import { TranslationKey } from '../../../core/i18n.service';
 import { TranslatePipe } from '../../../core/translate.pipe';
@@ -9,6 +11,7 @@ import { OrgStatus, Organisation, mapOrganisation } from '../../org.mapper';
 type SortKey = 'name' | 'createdAt';
 type SortDir = 'asc' | 'desc';
 
+const SEARCH_DEBOUNCE_MS = 300;
 const RATE_LIMIT_WAIT_MS = 5000;
 const MAX_FAILURES_PER_PAGE = 3;
 const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -21,6 +24,8 @@ const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
 })
 export class OrgListComponent implements OnInit {
   private readonly api = inject(OrgApiService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
 
   readonly orgs = signal<Organisation[]>([]);
   readonly total = signal(0);
@@ -31,9 +36,29 @@ export class OrgListComponent implements OnInit {
   readonly sortKey = signal<SortKey | null>(null);
   readonly sortDir = signal<SortDir>('asc');
 
+  readonly statusOptions: OrgStatus[] = ['active', 'inactive', 'suspended', 'pending', 'unknown'];
+
+  // The URL is the source of truth for search and filter, so a view can be shared.
+  private readonly params = toSignal(this.route.queryParamMap, { requireSync: true });
+
+  readonly query = computed(() => this.params().get('q') ?? '');
+
+  readonly statusFilter = computed<OrgStatus | ''>(() => {
+    const value = this.params().get('status');
+    return this.statusOptions.includes(value as OrgStatus) ? (value as OrgStatus) : '';
+  });
+
+  readonly filteredOrgs = computed(() => {
+    const q = this.query().trim().toLowerCase();
+    const status = this.statusFilter();
+    return this.orgs().filter(
+      (o) => (!status || o.status === status) && (!q || (o.name ?? '').toLowerCase().includes(q)),
+    );
+  });
+
   readonly sortedOrgs = computed(() => {
     const key = this.sortKey();
-    const list = this.orgs();
+    const list = this.filteredOrgs();
     if (!key) return list;
 
     const factor = this.sortDir() === 'asc' ? 1 : -1;
@@ -42,10 +67,16 @@ export class OrgListComponent implements OnInit {
     );
   });
 
-    
+  private readonly searchInput$ = new Subject<string>();
 
   private nextPage = 1;
   private lastPage = 1; // updated after page 1 tells us the total
+
+  constructor() {
+    this.searchInput$
+      .pipe(debounceTime(SEARCH_DEBOUNCE_MS), distinctUntilChanged(), takeUntilDestroyed())
+      .subscribe((text) => this.updateParams({ q: text.trim() || null }));
+  }
 
   ngOnInit(): void {
     this.loadAll();
@@ -91,7 +122,25 @@ export class OrgListComponent implements OnInit {
     }
   }
 
-   sortBy(key: SortKey): void {
+  onSearch(event: Event): void {
+    this.searchInput$.next((event.target as HTMLInputElement).value);
+  }
+
+  onStatus(event: Event): void {
+    const value = (event.target as HTMLSelectElement).value;
+    this.updateParams({ status: value || null });
+  }
+
+  private updateParams(changes: Record<string, string | null>): void {
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: changes,
+      queryParamsHandling: 'merge', // keep the other param; null removes one
+      replaceUrl: true,
+    });
+  }
+
+  sortBy(key: SortKey): void {
     if (this.sortKey() === key) {
       this.sortDir.update((d) => (d === 'asc' ? 'desc' : 'asc'));
     } else {
