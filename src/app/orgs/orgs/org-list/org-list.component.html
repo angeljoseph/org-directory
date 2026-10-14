@@ -1,0 +1,50 @@
+<h1>{{ 'app.title' | t }}</h1>
+
+@if (loading() && orgs().length === 0) {
+  <p class="state">{{ 'state.loading' | t }}</p>
+} @else if (error() && orgs().length === 0) {
+  <div class="state state-error" role="alert">
+    <p>{{ 'state.error' | t }}</p>
+    <button type="button" (click)="loadAll()">{{ 'state.retry' | t }}</button>
+  </div>
+} @else {
+  <p class="progress" aria-live="polite">
+    {{ 'list.loadedProgress' | t: { loaded: orgs().length, total: total() } }}
+  </p>
+
+  @if (rateLimited()) {
+    <p class="state">{{ 'state.rateLimited' | t }}</p>
+  }
+
+  @if (error()) {
+    <div class="state state-error" role="alert">
+      <p>{{ 'state.error' | t }}</p>
+      <button type="button" (click)="loadAll()">{{ 'state.retry' | t }}</button>
+    </div>
+  }
+
+  <table>
+    <thead>
+      <tr>
+        <th>{{ 'list.col.name' | t }}</th>
+        <th>{{ 'list.col.status' | t }}</th>
+        <th>{{ 'list.col.members' | t }}</th>
+        <th>{{ 'list.col.owner' | t }}</th>
+        <th>{{ 'list.col.created' | t }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (org of orgs(); track org.key) {
+        <tr>
+          <td class="name" dir="auto" [attr.title]="org.name">
+            {{ org.name ?? ('org.unnamed' | t) }}
+          </td>
+          <td>{{ statusLabel(org.status) | t }}</td>
+          <td>{{ org.memberCount ?? ('common.dash' | t) }}</td>
+          <td>{{ org.ownerEmail ?? ('common.dash' | t) }}</td>
+          <td>{{ (org.createdAt | date: 'mediumDate') ?? ('common.dash' | t) }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}

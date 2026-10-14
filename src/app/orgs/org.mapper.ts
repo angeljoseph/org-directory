@@ -1,13 +1,15 @@
+export type OrgStatus = 'active' | 'inactive' | 'suspended' | 'pending' | 'unknown';
+
 export interface Organisation {
   key: string;
   name: string | null;
-  status: string;
+  status: OrgStatus;
   memberCount: number | null;
   ownerEmail: string | null;
   createdAt: Date | null;
 }
 
-const STATUSES = ['active', 'inactive', 'suspended', 'pending'];
+const STATUSES: OrgStatus[] = ['active', 'inactive', 'suspended', 'pending'];
 
 export function mapOrganisation(raw: any, key: string): Organisation {
   // name: empty or missing becomes null
@@ -15,7 +17,7 @@ export function mapOrganisation(raw: any, key: string): Organisation {
 
   // status: "ACTIVE" becomes "active"; unrecognised ("actve", null) becomes "unknown"
   const s = String(raw.status ?? '').trim().toLowerCase();
-  const status = STATUSES.includes(s) ? s : 'unknown';
+  const status: OrgStatus = STATUSES.includes(s as OrgStatus) ? (s as OrgStatus) : 'unknown';
 
   // member count: "12" becomes 12; -1, null, text become null
   const n = Number(raw.memberCount);
