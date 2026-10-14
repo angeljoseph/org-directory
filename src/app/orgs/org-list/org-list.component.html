@@ -1,7 +1,7 @@
 <h1>{{ 'app.title' | t }}</h1>
 
 @if (loading() && orgs().length === 0) {
-  <p class="state">{{ 'state.loading' | t }}</p>
+  <p class="state" role="status">{{ 'state.loading' | t }}</p>
 } @else if (error() && orgs().length === 0) {
   <div class="state state-error" role="alert">
     <p>{{ 'state.error' | t }}</p>
@@ -42,7 +42,7 @@
   </p>
 
   @if (rateLimited()) {
-    <p class="state">{{ 'state.rateLimited' | t }}</p>
+    <p class="state" role="status">{{ 'state.rateLimited' | t }}</p>
   }
 
   @if (error()) {
@@ -52,19 +52,21 @@
     </div>
   }
 
+  <div class="table-wrap">
   <table>
+    <caption class="visually-hidden">{{ 'list.caption' | t }}</caption>
     <thead>
       <tr>
-        <th [attr.aria-sort]="ariaSort('name')">
+        <th scope="col" [attr.aria-sort]="ariaSort('name')">
           <button type="button" class="sort-btn" (click)="sortBy('name')">
             {{ 'list.col.name' | t }}
             <span aria-hidden="true">{{ sortArrow('name') | t }}</span>
           </button>
         </th>
-        <th>{{ 'list.col.status' | t }}</th>
-        <th>{{ 'list.col.members' | t }}</th>
-        <th>{{ 'list.col.owner' | t }}</th>
-        <th [attr.aria-sort]="ariaSort('createdAt')">
+        <th scope="col">{{ 'list.col.status' | t }}</th>
+        <th scope="col">{{ 'list.col.members' | t }}</th>
+        <th scope="col">{{ 'list.col.owner' | t }}</th>
+        <th scope="col" [attr.aria-sort]="ariaSort('createdAt')">
           <button type="button" class="sort-btn" (click)="sortBy('createdAt')">
             {{ 'list.col.created' | t }}
             <span aria-hidden="true">{{ sortArrow('createdAt') | t }}</span>
@@ -75,10 +77,10 @@
     <tbody>
       @for (org of sortedOrgs(); track org.key) {
         <tr>
-          <td class="name" dir="auto" [attr.title]="org.name">
-            {{ org.name ?? ('org.unnamed' | t) }}
+          <td>
+            <span class="name" dir="auto" [attr.title]="org.name">{{ org.name ?? ('org.unnamed' | t) }}</span>
           </td>
-                    <td>
+          <td>
             <span class="status">
               <span class="dot" [attr.data-status]="org.status" aria-hidden="true"></span>
               {{ statusLabel(org.status) | t }}
@@ -91,6 +93,7 @@
       }
     </tbody>
   </table>
+  </div>
 
   @if (!loading() && !error() && sortedOrgs().length === 0) {
     <p class="state state-empty" role="status">{{ 'state.empty' | t }}</p>

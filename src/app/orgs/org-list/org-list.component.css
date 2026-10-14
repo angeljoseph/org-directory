@@ -20,10 +20,15 @@ th {
 }
 
 .name {
-  max-width: var(--name-max-width);
+  display: block;
+  max-inline-size: var(--name-max-width);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.table-wrap {
+  overflow-x: auto;
 }
 
 .state {
