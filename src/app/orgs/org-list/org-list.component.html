@@ -8,6 +8,19 @@
     <button type="button" (click)="loadAll()">{{ 'state.retry' | t }}</button>
   </div>
 } @else {
+    @if (notice(); as name) {
+    <p class="state state-success" role="status">{{ 'create.success' | t: { name } }}</p>
+  }
+
+  @if (showForm()) {
+    <app-org-create-form
+      [existingNames]="existingNames()"
+      (created)="onCreated($event)"
+      (cancelled)="showForm.set(false)"
+    />
+  } @else {
+    <button type="button" class="add-btn" (click)="openForm()">{{ 'create.open' | t }}</button>
+  }
   <div class="filters">
     <div class="field">
       <label for="search">{{ 'filter.search' | t }}</label>

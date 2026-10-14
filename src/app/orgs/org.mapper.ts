@@ -8,6 +8,7 @@ export interface Organisation {
   ownerEmail: string | null;
   createdAt: Date | null;
 }
+export const EMAIL_PATTERN = /^\S+@\S+\.\S+$/;
 
 const STATUSES: OrgStatus[] = ['active', 'inactive', 'suspended', 'pending'];
 
@@ -26,7 +27,8 @@ export function mapOrganisation(raw: any, key: string): Organisation {
 
   // owner email: missing or invalid becomes null
   const email = raw.owner?.email;
-  const ownerEmail = typeof email === 'string' && /^\S+@\S+\.\S+$/.test(email.trim()) ? email.trim() : null;
+  const ownerEmail = typeof email === 'string' && EMAIL_PATTERN.test(email.trim()) ? email.trim() : null;
+//   const ownerEmail = typeof email === 'string' && /^\S+@\S+\.\S+$/.test(email.trim()) ? email.trim() : null;
 
   // date: number, numeric string or ISO string; anything unreadable becomes null
   let createdAt: Date | null = null;

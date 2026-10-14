@@ -1,0 +1,73 @@
+<form class="create-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <h2>{{ 'create.title' | t }}</h2>
+
+  @if (showSummary() && form.invalid) {
+    <p class="summary" role="alert">{{ 'form.fixErrors' | t }}</p>
+  }
+
+  <div class="field">
+    <label for="org-name">{{ 'field.name' | t }}</label>
+    <input
+      id="org-name"
+      type="text"
+      formControlName="name"
+      [attr.aria-invalid]="errorFor('name') ? 'true' : null"
+      [attr.aria-describedby]="errorFor('name') ? 'org-name-error' : null"
+    />
+    @if (errorFor('name'); as key) {
+      <p class="error" id="org-name-error">{{ key | t }}</p>
+    }
+  </div>
+
+  <div class="field">
+    <label for="org-status">{{ 'field.status' | t }}</label>
+    <select
+      id="org-status"
+      formControlName="status"
+      [attr.aria-invalid]="errorFor('status') ? 'true' : null"
+      [attr.aria-describedby]="errorFor('status') ? 'org-status-error' : null"
+    >
+      <option value="">{{ 'field.selectStatus' | t }}</option>
+      @for (s of statuses; track s) {
+        <option [value]="s">{{ statusLabel(s) | t }}</option>
+      }
+    </select>
+    @if (errorFor('status'); as key) {
+      <p class="error" id="org-status-error">{{ key | t }}</p>
+    }
+  </div>
+
+  <div class="field">
+    <label for="org-email">{{ 'field.ownerEmail' | t }}</label>
+    <input
+      id="org-email"
+      type="email"
+      formControlName="ownerEmail"
+      [attr.aria-invalid]="errorFor('ownerEmail') ? 'true' : null"
+      [attr.aria-describedby]="errorFor('ownerEmail') ? 'org-email-error' : null"
+    />
+    @if (errorFor('ownerEmail'); as key) {
+      <p class="error" id="org-email-error">{{ key | t }}</p>
+    }
+  </div>
+
+  <div class="field">
+    <label for="org-members">{{ 'field.memberCount' | t }}</label>
+    <input
+      id="org-members"
+      type="number"
+      inputmode="numeric"
+      formControlName="memberCount"
+      [attr.aria-invalid]="errorFor('memberCount') ? 'true' : null"
+      [attr.aria-describedby]="errorFor('memberCount') ? 'org-members-error' : null"
+    />
+    @if (errorFor('memberCount'); as key) {
+      <p class="error" id="org-members-error">{{ key | t }}</p>
+    }
+  </div>
+
+  <div class="actions">
+    <button type="submit">{{ 'create.submit' | t }}</button>
+    <button type="button" (click)="cancelled.emit()">{{ 'create.cancel' | t }}</button>
+  </div>
+</form>

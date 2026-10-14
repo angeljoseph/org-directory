@@ -78,3 +78,10 @@ select {
   border: var(--border-width) dashed var(--color-border);
   color: var(--color-text-muted);
 }
+.add-btn {
+  margin-block-end: var(--space-4);
+}
+
+.state-success {
+  color: var(--color-status-active);
+}

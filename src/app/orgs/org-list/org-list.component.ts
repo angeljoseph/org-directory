@@ -3,10 +3,11 @@ import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { Subject, debounceTime, distinctUntilChanged, firstValueFrom } from 'rxjs';
-import { ApiError, OrgApiService, PAGE_SIZE, RawPage } from '../../../core/org-api.service';
-import { TranslationKey } from '../../../core/i18n.service';
-import { TranslatePipe } from '../../../core/translate.pipe';
-import { OrgStatus, Organisation, mapOrganisation } from '../../org.mapper';
+import { ApiError, OrgApiService, PAGE_SIZE, RawPage } from '../../core/org-api.service';
+import { TranslationKey } from '../../core/i18n.service';
+import { TranslatePipe } from '../../core/translate.pipe';
+import { NewOrganisation, OrgCreateFormComponent } from '../org-create-form/org-create-form.component';
+import { OrgStatus, Organisation, mapOrganisation } from '../org.mapper';
 
 type SortKey = 'name' | 'createdAt';
 type SortDir = 'asc' | 'desc';
@@ -18,7 +19,7 @@ const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
 
 @Component({
   selector: 'app-org-list',
-  imports: [DatePipe, TranslatePipe],
+  imports: [DatePipe, TranslatePipe, OrgCreateFormComponent],
   templateUrl: './org-list.component.html',
   styleUrl: './org-list.component.css',
 })
@@ -32,6 +33,20 @@ export class OrgListComponent implements OnInit {
   readonly loading = signal(true);
   readonly error = signal(false);
   readonly rateLimited = signal(false);
+
+  // Organisations created in this session. Kept apart from `orgs` (what the API
+  // returned) so the "Loaded x of y" progress stays correct.
+  readonly created = signal<Organisation[]>([]);
+  readonly showForm = signal(false);
+  readonly notice = signal<string | null>(null);
+
+  readonly allOrgs = computed(() => [...this.created(), ...this.orgs()]);
+
+  readonly existingNames = computed(() =>
+    this.allOrgs()
+      .map((o) => o.name)
+      .filter((name): name is string => name !== null),
+  );
 
   readonly sortKey = signal<SortKey | null>(null);
   readonly sortDir = signal<SortDir>('asc');
@@ -51,7 +66,7 @@ export class OrgListComponent implements OnInit {
   readonly filteredOrgs = computed(() => {
     const q = this.query().trim().toLowerCase();
     const status = this.statusFilter();
-    return this.orgs().filter(
+    return this.allOrgs().filter(
       (o) => (!status || o.status === status) && (!q || (o.name ?? '').toLowerCase().includes(q)),
     );
   });
@@ -69,6 +84,7 @@ export class OrgListComponent implements OnInit {
 
   private readonly searchInput$ = new Subject<string>();
 
+  private newCount = 0;
   private nextPage = 1;
   private lastPage = 1; // updated after page 1 tells us the total
 
@@ -120,6 +136,25 @@ export class OrgListComponent implements OnInit {
         }
       }
     }
+  }
+
+  openForm(): void {
+    this.notice.set(null);
+    this.showForm.set(true);
+  }
+
+  onCreated(data: NewOrganisation): void {
+    const org: Organisation = {
+      key: `new:${++this.newCount}`,
+      name: data.name,
+      status: data.status,
+      memberCount: data.memberCount,
+      ownerEmail: data.ownerEmail,
+      createdAt: new Date(),
+    };
+    this.created.update((list) => [org, ...list]);
+    this.showForm.set(false);
+    this.notice.set(data.name);
   }
 
   onSearch(event: Event): void {

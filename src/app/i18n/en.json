@@ -23,5 +23,26 @@
   "sort.desc": "▼",
     "filter.search": "Search by name",
   "filter.status": "Status",
-  "filter.allStatuses": "All statuses"
+  "filter.allStatuses": "All statuses",
+    "create.open": "Add organisation",
+  "create.title": "New organisation",
+  "create.submit": "Create",
+  "create.cancel": "Cancel",
+  "create.success": "“{name}” was added.",
+  "form.fixErrors": "Please fix the highlighted fields.",
+  "field.name": "Name",
+  "field.status": "Status",
+  "field.ownerEmail": "Owner email",
+  "field.memberCount": "Member count (optional)",
+  "field.selectStatus": "Select a status",
+  "error.name.required": "Enter a name.",
+  "error.name.tooShort": "Name must be at least 3 characters.",
+  "error.name.tooLong": "Name must be 80 characters or fewer.",
+  "error.name.duplicate": "An organisation with this name already exists.",
+  "error.status.required": "Choose a status.",
+  "error.ownerEmail.required": "Enter the owner's email.",
+  "error.ownerEmail.pattern": "Enter a valid email address.",
+  "error.memberCount.min": "Member count can't be negative.",
+  "error.memberCount.integer": "Member count must be a whole number."
+
 }
