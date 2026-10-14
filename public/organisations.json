@@ -1,0 +1,1322 @@
+[
+  {
+    "id": 122,
+    "name": "شركة البحر الأزرق",
+    "status": "ACTIVE",
+    "memberCount": 474,
+    "owner": {
+      "email": "admin@org.corp.example"
+    },
+    "createdAt": 1785738022918
+  },
+  {
+    "id": 113,
+    "name": "Vandelay Systems",
+    "status": "active",
+    "memberCount": 102,
+    "owner": null,
+    "createdAt": "2023-05-08T02:56:24.205Z"
+  },
+  {
+    "id": 23,
+    "name": "Soylent Logistics",
+    "status": "active",
+    "memberCount": 344,
+    "owner": {
+      "email": "ops@soylentlogis.example.com"
+    },
+    "createdAt": "2024-05-14T16:34:47.838Z"
+  },
+  {
+    "id": 85,
+    "name": "Hooli Capital Hooli Capital Hooli Capital Hooli Capital Hooli Capital Hooli Capital",
+    "status": "active ",
+    "memberCount": "138",
+    "owner": {
+      "email": "@nohost.example"
+    },
+    "createdAt": "2024-03-11T21:53:11.646Z"
+  },
+  {
+    "id": 63,
+    "name": "Aperture Capital GmbH",
+    "status": "inactive",
+    "memberCount": 431,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2023-11-09T05:53:52.279Z"
+  },
+  {
+    "id": 33,
+    "name": "Wayne Logistics Ltd",
+    "status": null,
+    "memberCount": 354,
+    "owner": {
+      "email": "admin@waynelogisti.example.com"
+    },
+    "createdAt": "2025-04-12T14:15:24.434Z"
+  },
+  {
+    "id": 70,
+    "name": "Soylent Partners",
+    "status": "active ",
+    "memberCount": 171,
+    "owner": {
+      "email": "two words@x.example"
+    },
+    "createdAt": "2026-09-18T14:23:04.005Z"
+  },
+  {
+    "id": 91,
+    "name": "Hooli Media LLC",
+    "status": "pending",
+    "memberCount": 456,
+    "owner": {
+      "email": "info@hoolimediall.corp.example"
+    },
+    "createdAt": "2025-12-16T16:36:31.465Z"
+  },
+  {
+    "id": 110,
+    "name": "Wayne Capital LLC",
+    "status": "active",
+    "memberCount": 428,
+    "owner": {
+      "email": "two words@x.example"
+    },
+    "createdAt": "2024-04-23T02:45:51.022Z"
+  },
+  {
+    "id": 10,
+    "name": "مؤسسة الفجر",
+    "status": "suspended",
+    "memberCount": 106,
+    "owner": {
+      "email": "two words@x.example"
+    },
+    "createdAt": 1711801929631
+  },
+  {
+    "id": 81,
+    "name": "Massive Dynamic Industries LLC",
+    "status": "Suspended",
+    "memberCount": "24",
+    "owner": {
+      "email": "admin@massivedynam.mail.example"
+    },
+    "createdAt": "2026-06-15T08:57:20.794Z"
+  },
+  {
+    "id": 49,
+    "name": "شركة الأمل 🌟",
+    "status": "inactive",
+    "memberCount": 393,
+    "createdAt": "1655809293043"
+  },
+  {
+    "id": 13,
+    "name": "  Massive Dynamic Energy  ",
+    "status": "actve",
+    "memberCount": 63,
+    "owner": {
+      "email": "ops@massivedynam.corp.example"
+    },
+    "createdAt": "2025-08-17T08:35:26.089Z"
+  },
+  {
+    "id": 17,
+    "name": "Vandelay Works",
+    "status": "active",
+    "memberCount": 292,
+    "owner": {
+      "email": "ops@vandelaywork.example.com"
+    },
+    "createdAt": "2026-01-23T21:37:27.882Z"
+  },
+  {
+    "id": 109,
+    "name": "Vandelay Holdings",
+    "status": "Suspended",
+    "memberCount": 4,
+    "owner": {
+      "email": "ops@vandelayhold.example.com"
+    },
+    "createdAt": "2023-12-31T14:21:05.584Z"
+  },
+  {
+    "id": 42,
+    "name": "Globex Corporation Ltd",
+    "status": "actve",
+    "memberCount": 7,
+    "owner": {
+      "email": "hq@globex.example"
+    },
+    "createdAt": "2023-11-30T14:45:10Z"
+  },
+  {
+    "id": 28,
+    "name": "Vandelay Energy",
+    "status": "active",
+    "memberCount": "265",
+    "owner": {
+      "email": "info@vandelayener.mail.example"
+    },
+    "createdAt": "yesterday"
+  },
+  {
+    "id": 64,
+    "name": "Wayne Group",
+    "status": "Active",
+    "memberCount": 404,
+    "owner": {
+      "email": "ops@waynegroup.example.org"
+    },
+    "createdAt": "2023-03-12T07:49:40.528Z"
+  },
+  {
+    "id": 94,
+    "name": "Vandelay Capital Inc",
+    "status": "actve",
+    "memberCount": -3,
+    "createdAt": "2025-08-25T17:01:52.103Z"
+  },
+  {
+    "id": 3,
+    "name": null,
+    "status": "Active",
+    "memberCount": -1,
+    "createdAt": "2024-01-02T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "name": "مجموعة الصحراء 🌟",
+    "status": "active",
+    "memberCount": null,
+    "owner": {
+      "email": "admin@org.example.com"
+    },
+    "createdAt": "2022-05-11T12:04:59.362Z"
+  },
+  {
+    "id": 51,
+    "name": "Monsters Partners GmbH",
+    "status": " active",
+    "memberCount": 379,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2022-08-26T19:00:24.562Z"
+  },
+  {
+    "id": 127,
+    "name": "Aperture Capital GmbH",
+    "status": "pending",
+    "memberCount": 162,
+    "owner": {
+      "email": "hq@aperturecapi.example.com"
+    },
+    "createdAt": null
+  },
+  {
+    "id": 55,
+    "name": "INITECH",
+    "status": "actve",
+    "memberCount": 274,
+    "owner": {
+      "email": "admin@initech.corp.example"
+    },
+    "createdAt": "1666978963156"
+  },
+  {
+    "id": 68,
+    "name": "Umbrella Systems LLC",
+    "status": "pending",
+    "memberCount": 160,
+    "owner": {
+      "email": "info@umbrellasyst.mail.example"
+    },
+    "createdAt": "2024-08-21T20:48:30.445Z"
+  },
+  {
+    "id": 93,
+    "name": "Hooli Holdings",
+    "status": "pending",
+    "memberCount": 88,
+    "owner": null,
+    "createdAt": "2024-09-05T15:18:30.940Z"
+  },
+  {
+    "id": 74,
+    "name": "GLOBEX CORPORATION",
+    "status": "active",
+    "memberCount": 372,
+    "owner": {
+      "email": "info@globexcorpor.mail.example"
+    },
+    "createdAt": "1762648478556"
+  },
+  {
+    "id": 21,
+    "name": "Cyberdyne Capital Ltd",
+    "status": "active",
+    "memberCount": 355,
+    "owner": {
+      "email": "info@cyberdynecap.example.org"
+    },
+    "createdAt": "2023-10-22T09:22:42.709Z"
+  },
+  {
+    "id": 38,
+    "name": "Dunder Works Inc",
+    "status": "active",
+    "memberCount": 66,
+    "owner": {
+      "email": "info@dunderworksi.example.com"
+    },
+    "createdAt": "2022-07-22T15:42:35.766Z"
+  },
+  {
+    "id": 105,
+    "name": "شركة البحر الأزرق 🌟",
+    "status": "Active",
+    "memberCount": 401,
+    "owner": {
+      "email": "admin@org.mail.example"
+    },
+    "createdAt": 1688053760431
+  },
+  {
+    "id": 42,
+    "name": "Globex Corporation",
+    "status": "suspended",
+    "memberCount": 7,
+    "owner": {
+      "email": "hq@globex.example"
+    },
+    "createdAt": "2023-11-30T14:45:10Z"
+  },
+  {
+    "id": 124,
+    "name": "Tyrell Holdings Inc",
+    "status": "active",
+    "memberCount": 411,
+    "owner": {
+      "email": "admin@tyrellholdin.corp.example"
+    },
+    "createdAt": "2025-12-08T11:57:59.168Z"
+  },
+  {
+    "id": 29,
+    "name": "Hooli Works Ltd",
+    "status": "ACTIVE",
+    "memberCount": 12,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2022-07-05T15:53:20.922Z"
+  },
+  {
+    "id": 26,
+    "name": "شركة الأمل 🌟",
+    "status": "inactive",
+    "memberCount": "177",
+    "owner": {
+      "email": "ops@org.corp.example"
+    },
+    "createdAt": null
+  },
+  {
+    "id": 40,
+    "name": "Sterling Holdings GmbH",
+    "status": "INACTIVE",
+    "memberCount": -3,
+    "owner": {
+      "email": "not-an-email"
+    },
+    "createdAt": 1697403230495
+  },
+  {
+    "id": 90,
+    "name": "GLOBEX CORPORATION LTD",
+    "status": "pending",
+    "memberCount": null,
+    "owner": {
+      "email": "ops@globexcorpor.mail.example"
+    },
+    "createdAt": "2024-09-15T04:10:47.637Z"
+  },
+  {
+    "id": 69,
+    "name": "Aperture Industries Inc",
+    "status": "ACTIVE",
+    "memberCount": "",
+    "owner": {
+      "email": "ops@apertureindu.example.com"
+    },
+    "createdAt": "2023-03-26T07:14:26.882Z"
+  },
+  {
+    "id": 14,
+    "name": "Vandelay Logistics GmbH",
+    "status": "actve",
+    "memberCount": null,
+    "owner": {
+      "email": "admin@vandelaylogi.example.com"
+    },
+    "createdAt": 1748345998398
+  },
+  {
+    "id": 80,
+    "name": "Soylent Capital",
+    "status": "ACTIVE",
+    "memberCount": 56,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2024-03-15T04:54:51.878Z"
+  },
+  {
+    "id": 2,
+    "name": "",
+    "status": "ACTIVE",
+    "memberCount": "12",
+    "owner": {
+      "email": "a@b.example"
+    },
+    "createdAt": 1710150720000
+  },
+  {
+    "id": 1,
+    "name": "Northwind Traders",
+    "status": "active",
+    "memberCount": 42,
+    "owner": {
+      "email": "ops@northwind.example"
+    },
+    "createdAt": "2024-03-11T09:12:00Z"
+  },
+  {
+    "id": 118,
+    "name": "شركة البحر الأزرق",
+    "status": "actve",
+    "memberCount": "436",
+    "owner": {
+      "email": "hq@org.corp.example"
+    },
+    "createdAt": null
+  },
+  {
+    "id": 114,
+    "name": null,
+    "status": "active",
+    "memberCount": 263,
+    "owner": {
+      "email": "@nohost.example"
+    },
+    "createdAt": 1699328188518
+  },
+  {
+    "id": 98,
+    "name": "Cyberdyne Media LLC",
+    "status": "suspended",
+    "memberCount": 89,
+    "owner": {
+      "email": "hq@cyberdynemed.corp.example"
+    },
+    "createdAt": "2026-08-06T08:10:03.992Z"
+  },
+  {
+    "id": 116,
+    "name": "Cyberdyne Partners",
+    "status": "ACTIVE",
+    "memberCount": 276,
+    "owner": {
+      "email": "admin@cyberdynepar.mail.example"
+    },
+    "createdAt": 1694696985262
+  },
+  {
+    "id": 120,
+    "name": "Umbrella Group",
+    "status": " active",
+    "memberCount": 7,
+    "owner": {
+      "email": "ops@umbrellagrou.mail.example"
+    },
+    "createdAt": "2026-06-04T12:07:10.906Z"
+  },
+  {
+    "id": 9,
+    "name": "Umbrella Capital GmbH",
+    "status": "active",
+    "memberCount": "1,200",
+    "owner": {
+      "email": "info@umbrellacapi.example.org"
+    },
+    "createdAt": "2022-08-05T08:16:11.773Z"
+  },
+  {
+    "id": 52,
+    "name": "Prestige Foods Ltd",
+    "status": "pending",
+    "memberCount": null,
+    "owner": {
+      "email": "admin@prestigefood.example.com"
+    },
+    "createdAt": "2022-11-20T09:01:08.570Z"
+  },
+  {
+    "id": 125,
+    "name": "",
+    "status": "Active",
+    "memberCount": 144,
+    "owner": {
+      "email": "info@org.mail.example"
+    },
+    "createdAt": 1665228366473
+  },
+  {
+    "id": 39,
+    "name": "Cyberdyne Systems GmbH",
+    "status": "active",
+    "memberCount": 21,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": 1661160954214
+  },
+  {
+    "id": 60,
+    "name": "Pied Piper Logistics GmbH",
+    "status": "actve",
+    "memberCount": 85,
+    "owner": {
+      "email": "info@piedpiperlog.example.org"
+    },
+    "createdAt": 1662438304806
+  },
+  {
+    "id": 27,
+    "name": "Stark Logistics Ltd",
+    "status": "active",
+    "memberCount": 41,
+    "owner": {
+      "email": "ops@starklogisti.example.org"
+    },
+    "createdAt": "2023-10-06T01:48:16.036Z"
+  },
+  {
+    "id": 31,
+    "name": "Gringotts Works LLC",
+    "status": "inactive",
+    "memberCount": 419,
+    "owner": {
+      "email": "@nohost.example"
+    },
+    "createdAt": "2024-01-10T09:39:42.382Z"
+  },
+  {
+    "id": 100,
+    "name": "Prestige Partners",
+    "status": "active ",
+    "memberCount": 12.5,
+    "owner": {
+      "email": "info@prestigepart.example.com"
+    },
+    "createdAt": "2026-01-02T05:35:59.564Z"
+  },
+  {
+    "id": 66,
+    "name": "Cyberdyne Works",
+    "status": "active",
+    "memberCount": 134,
+    "owner": {
+      "email": "admin@cyberdynewor.example.com"
+    },
+    "createdAt": "2025-08-21T09:58:12.273Z"
+  },
+  {
+    "id": 30,
+    "name": "Soylent Capital Soylent Capital Soylent Capital Soylent Capital Soylent Capital Soylent Capital",
+    "status": " active",
+    "memberCount": "146",
+    "owner": {
+      "email": "ops@soylentcapit.example.com"
+    },
+    "createdAt": 1708441029785
+  },
+  {
+    "id": 12,
+    "name": null,
+    "status": "INACTIVE",
+    "memberCount": "189",
+    "owner": {
+      "email": "info@org.corp.example"
+    },
+    "createdAt": "2025-09-09T15:13:31.479Z"
+  },
+  {
+    "id": 102,
+    "name": "Oscorp Systems",
+    "status": "INACTIVE",
+    "memberCount": 345,
+    "createdAt": 1752609334117
+  },
+  {
+    "id": 111,
+    "name": "Pied Piper Foods",
+    "status": "Active",
+    "memberCount": 154,
+    "createdAt": "2023-07-08T21:00:54.377Z"
+  },
+  {
+    "id": 97,
+    "name": "Cyberdyne Labs GmbH",
+    "status": null,
+    "memberCount": 388,
+    "owner": {
+      "email": "not-an-email"
+    },
+    "createdAt": "2025-09-03T15:08:58.618Z"
+  },
+  {
+    "id": 104,
+    "name": "Massive Dynamic Labs Inc",
+    "status": "pending",
+    "memberCount": 131,
+    "createdAt": "2024-11-28T22:30:58.611Z"
+  },
+  {
+    "id": 22,
+    "name": "Tyrell Holdings GmbH",
+    "status": "actve",
+    "memberCount": 233,
+    "owner": {
+      "email": "hq@tyrellholdin.corp.example"
+    },
+    "createdAt": "2023-06-06T15:11:59.888Z"
+  },
+  {
+    "id": 35,
+    "name": "Hooli Works Ltd",
+    "status": "suspended",
+    "memberCount": 289,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2023-05-27T16:22:03.149Z"
+  },
+  {
+    "id": 45,
+    "name": "Wonka Group Ltd",
+    "status": "suspended",
+    "memberCount": null,
+    "createdAt": 1702180565543
+  },
+  {
+    "id": 54,
+    "name": "Stark Partners LLC",
+    "status": "ACTIVE",
+    "memberCount": 378,
+    "owner": {
+      "email": "info@starkpartner.corp.example"
+    },
+    "createdAt": 1755450050949
+  },
+  {
+    "id": 11,
+    "name": "Wayne Industries Inc",
+    "status": "pending",
+    "memberCount": 248,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2024-03-28T21:05:47.743Z"
+  },
+  {
+    "id": 82,
+    "name": "GLOBEX CORPORATION",
+    "status": "actve",
+    "memberCount": 125,
+    "createdAt": 1775542251757
+  },
+  {
+    "id": 44,
+    "name": "",
+    "status": "Active",
+    "memberCount": 187,
+    "owner": {
+      "email": "hq@org.example.com"
+    },
+    "createdAt": "1761851316895"
+  },
+  {
+    "id": 73,
+    "name": "Hooli Group",
+    "status": "active",
+    "memberCount": -5,
+    "owner": {
+      "email": "admin@hooligroup.corp.example"
+    },
+    "createdAt": "2025-06-05T10:26:44.908Z"
+  },
+  {
+    "id": 96,
+    "name": "Stark Group Ltd",
+    "status": "active",
+    "memberCount": 40,
+    "owner": {
+      "email": "admin@starkgrouplt.corp.example"
+    },
+    "createdAt": "2022-03-08T00:21:50.908Z"
+  },
+  {
+    "id": 101,
+    "name": "Pied Piper Works",
+    "status": "INACTIVE",
+    "memberCount": 12.5,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2026-06-07T22:15:38.403Z"
+  },
+  {
+    "id": 95,
+    "name": "Wonka Systems Ltd",
+    "status": "active",
+    "memberCount": 158,
+    "owner": {
+      "email": "admin@wonkasystems.mail.example"
+    },
+    "createdAt": "2026-05-23T09:49:39.843Z"
+  },
+  {
+    "id": 24,
+    "name": "Cyberdyne Partners Inc",
+    "status": "Active",
+    "memberCount": 477,
+    "owner": {
+      "email": "ops@cyberdynepar.example.org"
+    },
+    "createdAt": "2026-09-06T16:59:00.628Z"
+  },
+  {
+    "id": 108,
+    "name": "Wayne Holdings Wayne Holdings Wayne Holdings Wayne Holdings Wayne Holdings Wayne Holdings",
+    "status": "Active",
+    "memberCount": 218,
+    "owner": {
+      "email": "hq@wayneholding.corp.example"
+    },
+    "createdAt": "2023-05-08T16:19:45.015Z"
+  },
+  {
+    "id": 129,
+    "name": "",
+    "status": "active ",
+    "memberCount": null,
+    "owner": {
+      "email": "hq@org.corp.example"
+    },
+    "createdAt": "2024-04-23T17:28:40.885Z"
+  },
+  {
+    "id": 6,
+    "name": "شركة الأمل 🌟",
+    "status": "active",
+    "memberCount": 3,
+    "owner": {
+      "email": "info@amal.example"
+    },
+    "createdAt": "2025-06-01T08:00:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Initech",
+    "status": null,
+    "memberCount": null,
+    "owner": {
+      "email": "not-an-email"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 76,
+    "name": "Pied Piper Logistics Ltd",
+    "status": "INACTIVE",
+    "memberCount": 56,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2023-11-08T13:22:12.586Z"
+  },
+  {
+    "id": 106,
+    "name": "Bluth Capital",
+    "status": "pending",
+    "memberCount": 382,
+    "owner": {
+      "email": "hq@bluthcapital.example.com"
+    },
+    "createdAt": "2025-05-11T00:55:32.859Z"
+  },
+  {
+    "id": 26,
+    "name": "Dunder Partners",
+    "status": "ACTIVE",
+    "memberCount": 86,
+    "owner": {
+      "email": "ops@dunderpartne.example.org"
+    },
+    "createdAt": "1685422580674"
+  },
+  {
+    "id": 92,
+    "name": "Vandelay Media GmbH",
+    "status": "ACTIVE",
+    "memberCount": 187,
+    "owner": {
+      "email": "missing@"
+    },
+    "createdAt": "2026-05-19T03:07:54.868Z"
+  },
+  {
+    "id": 88,
+    "name": "Sterling Labs",
+    "status": "actve",
+    "memberCount": null,
+    "owner": {
+      "email": "admin@sterlinglabs.mail.example"
+    },
+    "createdAt": 1683900725119
+  },
+  {
+    "id": 65,
+    "name": "شركة البحر الأزرق 🌟",
+    "status": "active",
+    "memberCount": 317,
+    "createdAt": "2025-05-04T16:40:53.333Z"
+  },
+  {
+    "id": 112,
+    "name": "Tyrell Capital Inc",
+    "status": "active",
+    "memberCount": 370,
+    "owner": {
+      "email": "ops@tyrellcapita.mail.example"
+    },
+    "createdAt": "2024-04-01T17:00:43.944Z"
+  },
+  {
+    "id": 99,
+    "name": "NORTHWIND TRADERS",
+    "status": "active",
+    "memberCount": "485",
+    "owner": {
+      "email": "admin@northwindtra.example.com"
+    },
+    "createdAt": 1720091962683
+  },
+  {
+    "id": 15,
+    "name": "",
+    "status": "inactive",
+    "memberCount": 322,
+    "owner": null,
+    "createdAt": "2024-02-27T17:22:42.528Z"
+  },
+  {
+    "id": 77,
+    "name": "Aperture Holdings Ltd",
+    "status": "suspended",
+    "memberCount": 206,
+    "owner": {
+      "email": "admin@aperturehold.corp.example"
+    },
+    "createdAt": "2023-03-28T13:32:37.146Z"
+  },
+  {
+    "id": 25,
+    "name": "Hooli Energy LLC",
+    "status": "active",
+    "memberCount": "500",
+    "owner": {
+      "email": "admin@hoolienergyl.corp.example"
+    },
+    "createdAt": "2022-09-04T21:30:12.191Z"
+  },
+  {
+    "id": 59,
+    "name": "Monsters Holdings",
+    "status": "Active",
+    "memberCount": 43,
+    "owner": {
+      "email": "ops@monstershold.example.org"
+    },
+    "createdAt": 1673641407763
+  },
+  {
+    "id": 133,
+    "name": "Tyrell Industries",
+    "status": " active",
+    "memberCount": null,
+    "owner": {
+      "email": "ops@tyrellindust.example.org"
+    },
+    "createdAt": 1691419555217
+  },
+  {
+    "id": 115,
+    "name": "Aperture Capital",
+    "status": "active ",
+    "memberCount": 253,
+    "createdAt": "2022-08-04T12:13:45.676Z"
+  },
+  {
+    "id": 121,
+    "name": "Gringotts Labs",
+    "status": null,
+    "memberCount": 314,
+    "owner": {
+      "email": "info@gringottslab.example.org"
+    },
+    "createdAt": "2023-02-14T17:09:34.196Z"
+  },
+  {
+    "id": 49,
+    "name": "Wonka Industries",
+    "status": "active ",
+    "memberCount": 319,
+    "owner": {
+      "email": "info@wonkaindustr.corp.example"
+    },
+    "createdAt": "2024-01-04T05:12:33.147Z"
+  },
+  {
+    "id": 57,
+    "name": "",
+    "status": null,
+    "memberCount": 85,
+    "owner": {
+      "email": "hq@org.corp.example"
+    },
+    "createdAt": 1778400346780
+  },
+  {
+    "id": 7,
+    "name": "The Very Long Organisation Name That Somebody Actually Typed Into The Field Because Nobody Validated It And It Keeps Going Well Past Any Reasonable Column Width And Still Has Not Stopped",
+    "status": "inactive",
+    "memberCount": 0,
+    "owner": {
+      "email": "long@example.com"
+    },
+    "createdAt": "2024-07-19T16:20:00Z"
+  },
+  {
+    "id": 48,
+    "name": "Cyberdyne Systems",
+    "status": "Suspended",
+    "memberCount": 348,
+    "owner": {
+      "email": "hq@cyberdynesys.corp.example"
+    },
+    "createdAt": 1683171711090
+  },
+  {
+    "id": 87,
+    "name": "",
+    "status": "Suspended",
+    "memberCount": 240,
+    "owner": {
+      "email": "info@org.example.org"
+    },
+    "createdAt": "2022-04-24T09:59:55.522Z"
+  },
+  {
+    "id": 132,
+    "name": "Prestige Partners",
+    "status": "INACTIVE",
+    "memberCount": null,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2025-10-14T22:23:34.900Z"
+  },
+  {
+    "id": 17,
+    "name": "Umbrella Holdings",
+    "status": "suspended",
+    "memberCount": 99,
+    "owner": {
+      "email": "admin@umbrellahold.mail.example"
+    },
+    "createdAt": "2026-02-12T19:35:02.281Z"
+  },
+  {
+    "id": 103,
+    "name": "INITECH",
+    "status": "actve",
+    "memberCount": null,
+    "owner": {
+      "email": "missing@"
+    },
+    "createdAt": "2024-02-03T22:10:22.691Z"
+  },
+  {
+    "id": 117,
+    "name": "Pied Piper Holdings GmbH",
+    "status": "active",
+    "memberCount": "480",
+    "owner": {
+      "email": "missing@"
+    },
+    "createdAt": "2022-05-19T12:43:07.013Z"
+  },
+  {
+    "id": 58,
+    "name": "Monsters Logistics",
+    "status": "suspended",
+    "memberCount": 426,
+    "owner": {
+      "email": "hq@monsterslogi.example.org"
+    },
+    "createdAt": "2022-07-28T20:19:55.191Z"
+  },
+  {
+    "id": 36,
+    "name": "Prestige Group",
+    "status": "suspended",
+    "memberCount": 195,
+    "owner": {
+      "email": "hq@prestigegrou.example.com"
+    },
+    "createdAt": "2026-06-09T09:34:52.501Z"
+  },
+  {
+    "id": 43,
+    "name": "Monsters Logistics",
+    "status": "active ",
+    "memberCount": 274,
+    "owner": {
+      "email": "info@monsterslogi.example.com"
+    },
+    "createdAt": 1757983303838
+  },
+  {
+    "id": 56,
+    "name": "Bluth Energy",
+    "status": "actve",
+    "memberCount": null,
+    "owner": {
+      "email": "hq@bluthenergy.mail.example"
+    },
+    "createdAt": "1644814373156"
+  },
+  {
+    "id": 25,
+    "name": null,
+    "status": "Suspended",
+    "memberCount": 188,
+    "owner": {
+      "email": "admin@org.mail.example"
+    },
+    "createdAt": "1708542243618"
+  },
+  {
+    "id": 61,
+    "name": "NORTHWIND TRADERS",
+    "status": "inactive",
+    "memberCount": -8,
+    "createdAt": "2024-12-12T03:20:16.456Z"
+  },
+  {
+    "id": 50,
+    "name": "NORTHWIND TRADERS",
+    "status": "active ",
+    "memberCount": 330,
+    "owner": {
+      "email": "hq@northwindtra.example.com"
+    },
+    "createdAt": "2022-08-26T14:02:28.263Z"
+  },
+  {
+    "id": 18,
+    "name": "شركة البحر الأزرق",
+    "status": "pending",
+    "memberCount": null,
+    "owner": {
+      "email": "ops@org.corp.example"
+    },
+    "createdAt": "2023-11-12T21:19:48.205Z"
+  },
+  {
+    "id": 107,
+    "name": "Dunder Systems",
+    "status": "active",
+    "memberCount": 338,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2023-03-06T21:30:38.254Z"
+  },
+  {
+    "id": 53,
+    "name": "Oscorp Foods",
+    "status": "active ",
+    "memberCount": -6,
+    "owner": {
+      "email": "info@oscorpfoods.example.com"
+    },
+    "createdAt": "2022-07-15T21:24:33.784Z"
+  },
+  {
+    "id": 62,
+    "name": "Acme Energy Ltd",
+    "status": null,
+    "memberCount": 208,
+    "owner": {
+      "email": "info@acmeenergylt.example.org"
+    },
+    "createdAt": 1716042740306
+  },
+  {
+    "id": 128,
+    "name": "مجموعة الصحراء",
+    "status": "Active",
+    "memberCount": 17,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2022-07-06T21:50:38.606Z"
+  },
+  {
+    "id": 131,
+    "name": "Wayne Partners GmbH",
+    "status": "active",
+    "memberCount": 131,
+    "owner": {
+      "email": "ops@waynepartner.corp.example"
+    },
+    "createdAt": "2023-09-04T20:40:54.656Z"
+  },
+  {
+    "id": 34,
+    "name": "Wayne Capital",
+    "status": "Suspended",
+    "memberCount": null,
+    "owner": {
+      "email": "ops@waynecapital.example.com"
+    },
+    "createdAt": "2023-10-09T13:38:26.895Z"
+  },
+  {
+    "id": 19,
+    "name": "",
+    "status": "ACTIVE",
+    "memberCount": 197,
+    "owner": {
+      "email": "ops@org.corp.example"
+    },
+    "createdAt": "2022-03-24T08:04:24.150Z"
+  },
+  {
+    "id": 75,
+    "name": "Cyberdyne Capital",
+    "status": "active",
+    "memberCount": -9,
+    "owner": {
+      "email": "info@cyberdynecap.corp.example"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 123,
+    "name": "شركة البحر الأزرق 🌟",
+    "status": "actve",
+    "memberCount": 15,
+    "owner": {
+      "email": "info@org.corp.example"
+    },
+    "createdAt": "2025-05-22T14:40:52.538Z"
+  },
+  {
+    "id": 78,
+    "name": "Sterling Logistics GmbH",
+    "status": "pending",
+    "memberCount": 30,
+    "createdAt": "2024-04-19T03:40:59.964Z"
+  },
+  {
+    "id": 28,
+    "name": "Hooli Labs LLC",
+    "status": "suspended",
+    "memberCount": -8,
+    "owner": {
+      "email": "hq@hoolilabsllc.corp.example"
+    },
+    "createdAt": null
+  },
+  {
+    "id": 67,
+    "name": "Gringotts Works",
+    "status": "active ",
+    "memberCount": 432,
+    "owner": null,
+    "createdAt": 1789451770353
+  },
+  {
+    "id": 126,
+    "name": "Monsters Logistics",
+    "status": "pending",
+    "memberCount": 398,
+    "owner": {
+      "email": "hq@monsterslogi.mail.example"
+    },
+    "createdAt": 1653176055590
+  },
+  {
+    "id": 71,
+    "name": "Wonka Partners",
+    "status": "active",
+    "memberCount": 423,
+    "owner": {
+      "email": "admin@wonkapartner.example.org"
+    },
+    "createdAt": null
+  },
+  {
+    "id": 46,
+    "name": "Pied Piper Capital Ltd",
+    "status": "suspended",
+    "memberCount": 14,
+    "owner": null,
+    "createdAt": 1753157435327
+  },
+  {
+    "id": 84,
+    "name": "Tyrell Works",
+    "status": "active",
+    "memberCount": "329",
+    "owner": {
+      "email": "ops@tyrellworks.mail.example"
+    },
+    "createdAt": "2026-03-04T15:40:37.759Z"
+  },
+  {
+    "id": 89,
+    "name": "مؤسسة الياسمين",
+    "status": "active ",
+    "memberCount": "186",
+    "owner": null,
+    "createdAt": "2024-06-18T23:03:31.733Z"
+  },
+  {
+    "id": 20,
+    "name": "Acme Industries Ltd",
+    "status": "actve",
+    "memberCount": "271",
+    "owner": {
+      "email": "ops@acmeindustri.example.org"
+    },
+    "createdAt": "2026-04-12T12:39:22.633Z"
+  },
+  {
+    "id": 41,
+    "name": "Oscorp Holdings",
+    "status": "suspended",
+    "memberCount": 56,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2022-07-11T16:57:53.948Z"
+  },
+  {
+    "id": 72,
+    "name": "Acme Partners LLC",
+    "status": null,
+    "memberCount": 269,
+    "owner": {
+      "email": "ops@acmepartners.example.com"
+    },
+    "createdAt": "2025-03-07T21:22:26.642Z"
+  },
+  {
+    "id": 130,
+    "name": "Hooli Logistics",
+    "status": "ACTIVE",
+    "memberCount": 222,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "31/02/2024"
+  },
+  {
+    "id": 83,
+    "name": "Oscorp Labs LLC",
+    "status": "active ",
+    "memberCount": "101",
+    "owner": {
+      "email": "not-an-email"
+    },
+    "createdAt": "2022-08-05T07:47:27.254Z"
+  },
+  {
+    "id": 32,
+    "name": "Tyrell Media Inc",
+    "status": "INACTIVE",
+    "memberCount": 55,
+    "owner": {
+      "email": "info@tyrellmediai.mail.example"
+    },
+    "createdAt": "2023-07-07T16:28:37.040Z"
+  },
+  {
+    "id": 86,
+    "name": "Pied Piper Media Inc",
+    "status": " active",
+    "memberCount": 18,
+    "owner": {
+      "email": "info@piedpipermed.mail.example"
+    },
+    "createdAt": "2026-03-21T07:08:33.903Z"
+  },
+  {
+    "id": 119,
+    "name": "Prestige Group",
+    "status": "inactive",
+    "memberCount": 12.5,
+    "owner": {
+      "email": "admin@prestigegrou.mail.example"
+    },
+    "createdAt": "2025-11-13T14:55:09.809Z"
+  },
+  {
+    "id": 37,
+    "name": "Sterling Systems GmbH",
+    "status": "pending",
+    "memberCount": 194,
+    "owner": {
+      "email": ""
+    },
+    "createdAt": "2025-10-05T10:56:51.006Z"
+  },
+  {
+    "id": 79,
+    "name": "Umbrella Partners Inc",
+    "status": "pending",
+    "memberCount": 470,
+    "owner": null,
+    "createdAt": "2022-09-22T08:53:50.940Z"
+  },
+  {
+    "id": 47,
+    "name": "Dunder Partners Dunder Partners Dunder Partners Dunder Partners Dunder Partners Dunder Partners",
+    "status": null,
+    "memberCount": 469,
+    "owner": {
+      "email": "hq@dunderpartne.example.com"
+    },
+    "createdAt": "2022-07-02T08:02:37.500Z"
+  }
+]
