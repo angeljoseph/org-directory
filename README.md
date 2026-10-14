@@ -1,59 +1,26 @@
-# OrgDirectory
+# Organisation Directory
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
+A small Angular 19 screen for finding organisations, checking their status and adding a new one.
 
-## Development server
+- Live app: _paste your link here_
+- Decisions and trade-offs: see [DECISIONS.md](./DECISIONS.md)
 
-To start a local development server, run:
+## Run it
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open http://localhost:4200. The list takes about a minute to load fully, because the mock API allows only 5 requests per minute.
 
-## Code scaffolding
+## Where things are
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `public/organisations.json`: the data (137 records, deliberately messy)
+- `generate-fixture.mjs`: script that built the data file. Run `node generate-fixture.mjs` to rebuild it.
+- `src/app/core/org-api.service.ts`: mock API (delay, ~15% failures, 25 per page, 5 requests per minute)
+- `src/app/orgs/org.mapper.ts`: turns raw records into clean ones
+- `src/app/orgs/org-list/`: the list, sorting, search and filter
+- `src/app/orgs/org-create-form/`: the create form
+- `src/app/i18n/en.json`: every visible string
+- `src/styles.css`: design tokens (colours, spacing, sizes)
