@@ -43,6 +43,7 @@
   "error.ownerEmail.required": "Enter the owner's email.",
   "error.ownerEmail.pattern": "Enter a valid email address.",
   "error.memberCount.min": "Member count can't be negative.",
-  "error.memberCount.integer": "Member count must be a whole number."
+  "error.memberCount.integer": "Member count must be a whole number.",
+    "list.caption": "Organisations"
 
 }
